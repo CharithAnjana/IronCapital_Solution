@@ -1,0 +1,132 @@
+﻿@model IEnumerable<Ironcapital.Models.BuyNowClass>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+   
+        <title>IRON Capital – Admin Dashboard </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+                .topnav a {
+                    float: left;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+
+                    .topnav a:hover {
+                        background-color: #ddd;
+                        color: black;
+                    }
+
+                    .topnav a.active {
+                        background-color: #04AA6D;
+                        color: white;
+                    }
+
+            .topnav-right {
+                float: right;
+            }
+        </style>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="topnav">
+        <a asp-action="Index" asp-controller="AdminDashboard">Home</a>
+        <a asp-action="List" asp-controller="Token">Tokens</a>
+        <div class="topnav-right">
+            <a asp-action="Logout" asp-controller="User">Logout</a>
+        </div>
+    </div>
+    <br />
+    <p>
+        <a asp-action="Form">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TokenClass)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.WalletAddress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TwitterID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RecBy)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TokenClass.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.WalletAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TwitterID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RecBy)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.OrderId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.OrderId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

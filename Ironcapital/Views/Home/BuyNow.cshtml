@@ -1,0 +1,296 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/select2.min.css">
+    <link rel="stylesheet" href="~/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="~/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="~/icon/favicon-32x32.png">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Dmitry Volkov">
+    <title>IRON Capital – NFT Marketplace</title>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <a asp-action="Index" asp-controller="Home">
+                    <img src="~/pics/logo.svg" alt="">
+                </a>
+            </div>
+
+
+            <!--div class="header__menu">
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="index.html" role="button">Home </a>
+
+                    </li>
+
+                </ul>
+            </div-->
+
+            <div class="header__actions">
+                <div class="header__action header__action--search">
+                    <button class="header__action-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" /></svg></button>
+                </div>
+
+                <div class="header__action header__action--profile">
+                    <a class="header__profile-btn " href="#" role="button" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-wallet"></i>
+
+                    </a>
+                </div>
+            </div>
+
+
+            <button class="header__btn" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- main content -->
+    <main class="main">
+        <div class="container">
+            <div class="row row--grid">
+
+                <!-- title -->
+                <div class="col-12">
+                    <div class="main__title main__title--page">
+                        <h1>Form</h1>
+                    </div>
+                </div>
+                <!-- end title -->
+            </div>
+
+            <div class="row row--grid">
+                <div class="col-12 col-lg-7 col-xl-8">
+                    <form action="#" class="sign__form sign__form--contacts">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <input type="text" name="name" class="sign__input" placeholder="Full Name">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <input type="text" name="email" class="sign__input" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <input type="number" name="tel" class="sign__input" placeholder="Contact Number">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="sign__group">
+                                    <select id="cars" name="cars" class="sign__input">
+                                        <option value="volvo">Choose Token Id</option>
+                                        <option value="saab">#001</option>
+                                        <option value="saab">#002</option>
+                                        <option value="saab">#003</option>
+                                        <option value="saab">#004</option>
+                                        <option value="saab">#005</option>
+                                        <option value="saab">#006</option>
+                                        <option value="saab">#007</option>
+                                        <option value="saab">#008</option>
+                                        <option value="saab">#009</option>
+                                        <option value="saab">#010</option>
+                                        <option value="saab">#011</option>
+                                        <option value="saab">#012</option>
+                                        <option value="saab">#013</option>
+                                        <option value="saab">#014</option>
+                                        <option value="saab">#015</option>
+                                        <option value="saab">#016</option>
+                                        <option value="saab">#017</option>
+                                        <option value="saab">#018</option>
+                                        <option value="saab">#019</option>
+                                        <option value="saab">#020</option>
+                                        <option value="saab">#021</option>
+                                        <option value="saab">#022</option>
+                                        <option value="saab">#023</option>
+                                        <option value="saab">#024</option>
+                                        <option value="saab">#025</option>                                      
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <input type="text" name="subject" class="sign__input" placeholder="Binance Wallet Address">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <input type="text" name="twitter" class="sign__input" placeholder="Twitter Id or URL">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <textarea name="text" class="sign__textarea" placeholder="Type your message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="sign__group">
+                                    <input type="text" name="subject" class="sign__input" placeholder="Recommended by">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-3">
+                                <button type="button" class="sign__btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                    <div class="main__title main__title--sidebar">
+                        <h2>Contact Us</h2>
+                        <p>We are energetic visionary minds with canny financial skills that invest in the world of cryptocurrency. Let's connect.</p>
+                    </div>
+                    <ul class="contacts__list">
+                        <li><a href="tel:+971564302484">+971 56 430 2484</a></li>
+                        <li><a href="mailto:support@ironcapital.xyz">support@ironcapital.xyz</a></li>
+
+                    </ul>
+                    <div class="contacts__social">
+
+
+
+
+                        <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z" /></svg></a>
+
+
+
+                        <a href="mailto:support@ironcapital.xyz"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.41,2-5.88,5.88a1,1,0,0,1-1.42,0L5.41,6ZM20,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V7.41l5.88,5.88a3,3,0,0,0,4.24,0L20,7.41Z" /></svg></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <!-- end main content -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-4 order-4 order-md-1 order-lg-4 order-xl-1">
+                    <div class="footer__logo">
+                        <img src="~/pics/logo.svg" alt="">
+                    </div>
+                    <p class="footer__tagline">We are energetic visionary minds<br> with canny financial skills that invest in the <br>world of cryptocurrency. Let's connect.</p>
+
+                    <div class="footer__lang">
+                        <a class="footer__lang-btn" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="~/img/flags/play-store.svg" alt="">
+                            <span>Play Store</span>
+                        </a>
+                    </div>
+                    <div class="footer__lang">
+                        <a class="footer__lang-btn" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="~/img/flags/app-store.svg" alt="">
+                            <span>App Store</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-1 order-md-2 order-lg-1 order-xl-2 offset-md-2 offset-lg-0">
+                    <h6 class="footer__title">NTF Marketplace</h6>
+                    <div class="footer__nav">
+                        <a href="#NFT">Explore</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-6 col-xl-4 order-3 order-lg-2 order-md-3 order-xl-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="footer__title">Community</h6>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer__nav">
+                                <a asp-action="Index" asp-controller="Home">Iron Capital</a>
+                                <a href="#">Help Center</a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer__nav">
+                                <a href="#">Contact</a>
+                                <a href="#">By Now</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer__content">
+                        <div class="footer__social">
+
+
+                            <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z" /></svg></a>
+
+
+
+                            <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.41,2-5.88,5.88a1,1,0,0,1-1.42,0L5.41,6ZM20,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V7.41l5.88,5.88a3,3,0,0,0,4.24,0L20,7.41Z" /></svg></a>
+                        </div>
+
+                        <small class="footer__copyright"> © 2022 IRON Capital DAO.xyz.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- JS -->
+    <script src="~/js/jquery-3.5.1.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/select2.min.js"></script>
+    <script src="~/js/smooth-scrollbar.js"></script>
+    <script src="~/js/jquery.countdown.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>
